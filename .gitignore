@@ -1,0 +1,7 @@
+*.suo
+*.GhostDoc.xml
+*/bin/
+*/obj/
+*/*.user
+*.user
+_Resharper*

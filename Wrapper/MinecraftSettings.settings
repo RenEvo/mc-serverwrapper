@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Wrapper" GeneratedClassName="MinecraftSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Memory" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2048</Value>
+    </Setting>
+    <Setting Name="MinecraftVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.5.2</Value>
+    </Setting>
+    <Setting Name="ModPackName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BurpTech</Value>
+    </Setting>
+    <Setting Name="ModProviderRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://github.com/RenEvo/BurpcraftModPack.git</Value>
+    </Setting>
+    <Setting Name="WebApiPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8080</Value>
+    </Setting>
+    <Setting Name="JarName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">minecraft_server.jar</Value>
+    </Setting>
+    <Setting Name="JavaPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\program files\java\jre7\bin\java.exe</Value>
+    </Setting>
+    <Setting Name="PermGen" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">512</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
