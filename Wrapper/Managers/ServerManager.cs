@@ -214,6 +214,9 @@ namespace Wrapper.Managers
         {
             _isRunning = false;
 
+            // tell the player manager to "disconnect" everyone
+            _playerManager.DisconnectAll();
+
             if (_serverProcess == null)
                 return;
 

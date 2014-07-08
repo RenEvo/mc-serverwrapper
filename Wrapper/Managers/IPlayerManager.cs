@@ -21,6 +21,11 @@ namespace Wrapper.Managers
         void Disconnect(string logLine);
 
         /// <summary>
+        /// Disconnects all.
+        /// </summary>
+        void DisconnectAll();
+
+        /// <summary>
         /// Gets the online users.
         /// </summary>
         /// <value>The online users.</value>
