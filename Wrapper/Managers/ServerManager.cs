@@ -179,7 +179,7 @@ namespace Wrapper.Managers
 
             _isRunning = true;
 
-            var startInfo = new ProcessStartInfo(_javaPath, String.Format("-server -XX:+UseConcMarkSweepGC -XX:MaxPermSize={2}M -Xmx{0}M -Xms{0}M -jar \"{1}\" nogui", _memory, ProcessPathName, _permGen))
+            var startInfo = new ProcessStartInfo(_javaPath, String.Format("-server -XX:MaxPermSize={2}M -Xmx{0}M -Xms{0}M -Xincgc -XX:+CMSIncrementalMode -XX:+UseConcMarkSweepGC -XX:+DisableExplicitGC -XX:+UseParNewGC -XX:ParallelGCThreads=2 -XX:+AggressiveOpts -XX:CompileThreshold=1500 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:+UseGCOverheadLimit -XX:+UseBiasedLocking -XX:UseSSE=3 -XX:+UseStringCache -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -jar \"{1}\" nogui", _memory, ProcessPathName, _permGen))
             {
                 RedirectStandardError = true,
                 RedirectStandardInput = true,
